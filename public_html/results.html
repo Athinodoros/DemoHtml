@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="projectApp"  ng-controller='projectController as c' >
+    <head>
+        <title>{{c.title}}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <script src="app.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--Here starts the header that 
+            is will be fixed for all the pages 
+        -->
+        <div class="header">
+            <div><h1 id='moto' >{{motto1}}</h1></div>
+            
+            <a><img src='{{logo}}' alt="macmondo logo" /></a>
+        </div>
+        <!--End of the header-->
+
+        <!--Here starts the main area   -->
+        <div class='main-area-backround'>
+            <div class='search'>
+                <div>
+                    <label>From :</label><input type="text" placeholder="from" />
+                </div>
+                <div>
+                    <label>To :</label><input type="text" placeholder="To" />
+                </div>
+                <div>
+                    <label>Departure :</label><input type="date"  />
+                </div>
+                <div>
+                    <label>Passengers </label><input type="number" />
+                </div>
+            </div>
+            <!-- Results from the search -->
+            <div>
+                <ul>
+                    <!--Example list items  --> 
+                    <li>
+                        <div  class='flight-info'>
+                            <a href="" >Airline Name</a>
+                            <div class='flightId'>COL3256</div>
+                            <div class='numberOfSeats'>3</div>
+                            <div class='date'>2016-12-30</div>
+                            <div class='price'>Price here </div>
+                            <div class='travelTime'>40h 30min </div>
+                            <div class='origin'>CPH</div>
+                            <div class='destination'>SKG</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div  class='flight-info'>
+                            <a href="" >Airline Name</a>
+                            <div class='flightId'>COL3256</div>
+                            <div class='numberOfSeats'>3</div>
+                            <div class='date'>2016-12-30</div>
+                            <div class='price'>Price here </div>
+                            <div class='travelTime'>40h 30min </div>
+                            <div class='origin'>CPH</div>
+                            <div class='destination'>SKG</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div  class='flight-info'>
+                            <a href="" >Airline Name</a>
+                            <div class='flightId'>COL3256</div>
+                            <div class='numberOfSeats'>3</div>
+                            <div class='date'>2016-12-30</div>
+                            <div class='price'>Price here </div>
+                            <div class='travelTime'>40h 30min </div>
+                            <div class='origin'>CPH</div>
+                            <div class='destination'>SKG</div>
+                        </div>
+                    </li>
+                    <!--end of example results--> 
+                </ul>
+            </div>
+        </div>
+        <!--End of the main area -->
+
+        <div class='footer'>
+            <div>
+                <a>Copyrights : We ain't got no copyrights </a>
+            </div>
+            <div>
+                <img src='{{schoolLogo}}' />
+            </div>
+            <div>
+                <p>Our remote help:</p>
+                <p>
+                    Write something about you <br/> 
+                    this will be reviewed by a lot people <br/>
+                    if you what to advertise your self feel free to do so
+                </p>
+            </div>
+            <div>
+                <p>
+                <h3>About Us </h3>
+                <a>  </a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

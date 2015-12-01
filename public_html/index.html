@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="projectApp"  ng-controller='projectController as c' >
+    <head>
+        <title>{{c.title}}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <script src="app.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--Here starts the header that 
+            is will be fixed for all the pages 
+        -->
+        <div class="header">
+            <div><h1 id='moto' >{{motto1}}</h1></div>
+            <a><img src='http://pre04.deviantart.net/239a/th/pre/i/2014/106/6/c/random_logo_by_criticl-d7eqdvw.png' alt="macmondo logo" /></a>
+        </div>
+        <!--End of the header-->
+
+        <!--Here starts the main area   -->
+        <div class='main-area-backround'>
+            <div>
+                <label>From :</label><input type="text" placeholder="from" />
+            </div>
+            <div>
+                <label>To :</label><input type="text" placeholder="To" />
+            </div>
+            <div>
+                <label>Departure :</label><input type="date"  />
+            </div>
+            <div>
+                <label>Passengers </label><input type="number" />
+            </div>
+        </div>
+        <!--End of the main area -->
+
+        <div class='footer'>
+            <div>
+                <a>Copyrights : We ain't got no copyrights </a>
+            </div>
+            <div>
+                <img src='https://www.cphbusiness.dk/media/74772/logo.svg' />
+            </div>
+            <div>
+                <p>Our remote help:</p>
+                <p>
+                    Write something about you <br/> 
+                    this will be reviewed by a lot people <br/>
+                    if you what to advertise your self feel free to do so
+                </p>
+            </div>
+            <div>
+                <p>
+                    <h3>About Us </h3>
+                    <a>  </a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+This response will be what shows up when the booking is done
+-->
+<html ng-app="projectApp"  ng-controller='projectController as c' >
+    <head>
+        <title>{{c.title}}</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <script src="app.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <!--Here starts the header that 
+            is will be fixed for all the pages 
+        -->
+        <div class="header">
+            <div><h1 id='moto' >{{motto1}}</h1></div>
+            <a><img src='{{logo}}' alt="macmondo logo" /></a>
+        </div>
+        <!--End of the header-->
+
+        <!--Here starts the main area   -->
+        <div class='main-area-backround'>
+            <div>
+                <lable class="flightID"> MCA2345 </lable>
+                <lable class="numberOfSeats"> 2 </lable>
+                <lable class="ReserveeName" > Peter Hansen </lable>
+                <lable class="ReservePhone" > 1234-5678 </lable>
+                <lable class="ReservePhone" > 1234-5678 </lable>
+                <lable class="ReserveeEmail" > grooup01@cphbusiness.dk </lable>
+                <div class='Passengers'>
+                    <!--single person-->
+                    <div class='passenger-info'>
+                        <label>First Name</label>
+                        <label>Last Name</label>
+                    </div>
+                    <!--end of single passenger-->
+                    <div class='passenger-info'>
+                        <label>First Name</label>
+                        <label>Last Name</label>
+                    </div>
+                    <div class='passenger-info'>
+                        <label>First Name</label>
+                        <label>Last Name</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of the main area -->
+
+        <div class='footer'>
+            <div>
+                <a>Copyrights : We ain't got no copyrights </a>
+            </div>
+            <div>
+                <img src='{{schoolLogo}}' />
+            </div>
+            <div>
+                <p>Our remote help:</p>
+                <p>
+                    Write something about you <br/> 
+                    this will be reviewed by a lot people <br/>
+                    if you what to advertise your self feel free to do so
+                </p>
+            </div>
+            <div>
+                <p>
+                <h3>About Us </h3>
+                <a>  </a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
